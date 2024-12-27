@@ -1,4 +1,8 @@
-# Ktk Sop
+# brew tap for sop
+
+sop, a swiss-army knife for processing RDF and Linked Data on the command line
+
+github repo: https://github.com/pchampin/sophia-cli
 
 ## How do I install these formulae?
 
