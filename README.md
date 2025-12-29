@@ -1,22 +1,61 @@
-# brew tap for sop
+# Homebrew tap for `sop`
 
-sop, a swiss-army knife for processing RDF and Linked Data on the command line
+`sop` is a swiss-army knife for processing RDF and Linked Data on the command line.
 
-github repo: https://github.com/pchampin/sophia-cli
+Project home: <https://github.com/pchampin/sophia-cli>
 
-## How do I install these formulae?
+## Installation
 
-`brew install ktk/sop/<formula>`
+Install directly from the tap:
 
-Or `brew tap ktk/sop` and then `brew install <formula>`.
-
-Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
-
-```ruby
-tap "ktk/sop"
-brew "<formula>"
+``` bash
+brew install ktk/sop/sop
 ```
 
-## Documentation
+Or first add the tap, then install:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+``` bash
+brew tap ktk/sop
+brew install sop
+```
+
+Use it in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle)
+`Brewfile`:
+
+``` ruby
+tap "ktk/sop"
+brew "sop"
+```
+
+## Updating
+
+Update Homebrew and the tap, then upgrade:
+
+``` bash
+brew update
+brew upgrade sop
+```
+
+If you need to pull from `main` explicitly:
+
+``` bash
+cd "$(brew --repository ktk/sop)"
+git pull origin main
+brew reinstall sop
+```
+
+## Usage
+
+After installation:
+
+``` bash
+sop --help
+sop --version
+```
+
+See the upstream documentation and examples in the sophia-cli
+repository.
+
+## Homebrew documentation
+
+`brew help`, `man brew` or <https://docs.brew.sh>.
