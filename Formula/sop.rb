@@ -2,7 +2,7 @@ class Sop < Formula
   desc "Swiss-army knife for processing RDF and Linked Data on the command line"
   homepage "https://github.com/pchampin/sophia-cli"
   head "https://github.com/pchampin/sophia-cli.git", branch: "main"
-  license \"Apache-2.0\"
+  license "Apache-2.0"
 
   depends_on "rust" => :build
 
