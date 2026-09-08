@@ -29,19 +29,13 @@ brew "sop"
 
 ## Updating
 
+`sop` installs a precompiled binary from the
+[sophia-cli releases](https://github.com/pchampin/sophia-cli/releases).
 Update Homebrew and the tap, then upgrade:
 
 ``` bash
 brew update
 brew upgrade sop
-```
-
-If you need to pull from `main` explicitly:
-
-``` bash
-cd "$(brew --repository ktk/sop)"
-git pull origin main
-brew reinstall sop
 ```
 
 ## Usage
